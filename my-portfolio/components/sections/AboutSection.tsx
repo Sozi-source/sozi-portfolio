@@ -6,17 +6,6 @@ const AboutSection: React.FC = () => {
     <section id="about" className="min-h-screen flex items-center bg-gray-50 px-6 md:px-20">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-10">
         
-        {/* Profile Image */}
-        <div className="md:w-1/2 flex justify-center">
-          <Image
-            src="/assets/images/profile.jpg"
-            alt="Wilfred Osozi"
-            width={500}
-            height={500}
-            className="rounded-full object-cover shadow-lg"
-          />
-        </div>
-
         {/* About Text */}
         <div className="md:w-1/2">
           <h2 className="text-4xl font-bold mb-6">About Me</h2>
@@ -29,9 +18,20 @@ const AboutSection: React.FC = () => {
           <p className="text-gray-700 text-lg mb-6">
             When I’m not coding, I love exploring new design trends, learning about emerging technologies, and contributing to open-source projects that make a difference.
           </p>
+
+           {/* Profile Image */}
+        <div className="md:w-1/2 flex justify-center">
+          <Image
+            src="/assets/images/profile.jpg"
+            alt="Wilfred Osozi"
+            width={500}
+            height={500}
+            className="rounded-full object-cover shadow-lg"
+          />
+        </div>
           <a
             href="#projects"
-            className="inline-block bg-black text-white px-6 py-3 rounded-md hover:bg-gray-800 transition"
+            className="inline-block bg-black text-white px-6 py-3 rounded-md hover:bg-gray-800 transition mt-5 mb-5"
           >
             View My Projects
           </a>
