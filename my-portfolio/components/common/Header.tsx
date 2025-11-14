@@ -28,7 +28,7 @@ const Header: React.FC = () => {
         <div className="md:hidden">
           <button onClick={() => setIsOpen(!isOpen)} className="focus:outline-none">
             <img
-              src={isOpen ? "/assets/icons/close.png" : "/assets/images/profile.jpg"}
+              src={isOpen ? "/assets/icons/close.png" : ""}
               alt={isOpen ? "Close Menu" : "Open Menu"}
               className="w-6 h-6"
             />
