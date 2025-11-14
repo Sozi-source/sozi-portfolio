@@ -3,23 +3,36 @@ import Image from "next/image";
 
 const projects = [
   {
-    title: "Portfolio Website",
-    description: "A personal portfolio to showcase projects, skills, and experience.",
-    image: "/assets/images/project1.jpg",
-    link: "https://github.com/Sozi-source/portfolio",
+    title: "Weather App",
+    description: "A web application that provides current weather information for any city using API integration.",
+    image: "/assets/images/weather.png",
+    link: "https://project-08-2025-p32c.vercel.app/",
   },
   {
     title: "E-commerce App",
     description: "A full-stack e-commerce application built with React and Node.js.",
-    image: "/assets/images/project2.jpg",
-    link: "https://github.com/Sozi-source/ecommerce-app",
+    image: "/assets/images/shopping.png",
+    link: "https://e-duka-three.vercel.app/",
   },
   {
-    title: "Nutrition Tracker",
-    description: "A web app to track daily nutrition intake and provide meal recommendations.",
-    image: "/assets/images/project3.jpg",
-    link: "https://github.com/Sozi-source/nutrition-tracker",
-  },
+  title: "Hotel Booking",
+  description: "A web app that allows users to search, book, and manage hotel reservations online.",
+  image: "/assets/images/travel.png",
+  link: "https://airbnbclone-peach-delta.vercel.app/",
+},
+{
+  title: "Age Calculator",
+  description: "A web app that calculates a person’s exact age based on their date of birth.",
+  image: "/assets/images/calculator.png",
+  link: "https://fe-mentor-tet4.vercel.app/",
+},
+{
+  title: "Countries Information",
+  description: "A web app providing details about countries, including population, capital, and region.",
+  image: "/assets/images/country.png",
+  link: "https://country-search-hazel-beta.vercel.app/",
+},
+
 ];
 
 const ProjectsSection: React.FC = () => {
@@ -34,11 +47,12 @@ const ProjectsSection: React.FC = () => {
               key={index}
               className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300"
             >
-              <div className="relative w-full h-48">
+              <div className="relative w-full h-56">
                 <Image
                   src={project.image}
                   alt={project.title}
-                  fill
+                  width={200}
+                  height={200}
                   className="object-cover"
                 />
               </div>
