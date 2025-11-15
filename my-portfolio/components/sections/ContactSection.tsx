@@ -11,7 +11,7 @@ const ContactSection: React.FC = () => {
         
         {/* Contact Info */}
         <div className="md:w-1/2 flex flex-col justify-center gap-6">
-          <h2 className="text-4xl font-bold mb-4">Contact Me</h2>
+          <h2 className="text-4xl font-bold mb-4 text-blue-600">Contact Me</h2>
           <p className="text-gray-700 text-lg">
             Feel free to reach out for collaborations, projects, or just to say hi!
           </p>

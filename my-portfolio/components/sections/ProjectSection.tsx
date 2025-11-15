@@ -42,7 +42,7 @@ const ProjectsSection: React.FC = () => {
     <section id="projects" className="min-h-screen bg-gray-50 px-6 md:px-20 py-20">
       <div className="max-w-6xl mx-auto">
         <motion.h2
-         className="text-4xl font-bold text-center mb-12"
+         className="text-4xl font-bold text-center mb-12 text-blue-600"
           initial={{ opacity: 0, y: -30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}

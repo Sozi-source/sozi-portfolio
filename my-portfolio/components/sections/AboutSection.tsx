@@ -15,7 +15,7 @@ const AboutSection: React.FC = () => {
           transition={{ duration: 0.8 }}
           className="md:w-1/2 space-y-6"
         >
-          <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900">About Me</h2>
+          <h2 className="text-4xl md:text-5xl font-extrabold text-blue-600">About Me</h2>
           
           <p className="text-gray-700 text-lg leading-relaxed">
             Hi, I'm <span className="font-semibold text-gray-900">Wilfred Osozi</span>, with a background in <span className="font-semibold">human health, nutrition, and dietetics</span>. I have spent most of my career <span className="font-semibold">training and mentoring college students</span> while exploring innovative ways to use technology to improve health outcomes.

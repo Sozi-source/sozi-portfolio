@@ -19,7 +19,7 @@ const SkillsSection: React.FC = () => {
       className="min-h-screen bg-gray-50 px-6 md:px-20 py-20 flex flex-col items-center"
     >
       <FadeIn>
-        <h2 className="text-4xl font-bold mb-12 text-center">Skills & Expertise</h2>
+        <h2 className="text-4xl font-bold mb-12 text-center text-blue-600">Skills & Expertise</h2>
       
       <ul className="flex flex-wrap gap-4 justify-center">
         {skills.map((skill, index) => (

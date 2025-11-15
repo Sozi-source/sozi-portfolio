@@ -90,7 +90,7 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({ item }) => {
 const ExperienceSection = () => {
   return (
     <section id="experience" className="py-20 px-5 md:px-20 bg-gray-50">
-      <h2 className="text-4xl font-bold text-center mb-10 text-gray-900">Experience</h2>
+      <h2 className="text-4xl font-bold text-center mb-10 text-blue-600">Experience</h2>
       <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
         {experienceData.map((item, index) => (
           <ExperienceCard key={index} item={item} />
