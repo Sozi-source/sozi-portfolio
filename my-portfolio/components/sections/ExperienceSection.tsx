@@ -78,7 +78,7 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({ item }) => {
       {item.points.length > 1 && (
         <button
           onClick={toggleShow}
-          className="mt-3 text-blue-600 hover:underline focus:outline-none"
+          className="mt-4 self-start text-blue-700 font-semibold hover:text-blue-900 hover:underline focus:outline-none transition-colors"
         >
           {showAll ? 'See Less' : 'See More'}
         </button>
