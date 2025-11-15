@@ -71,7 +71,7 @@ const ProjectsSection: React.FC = () => {
                 />
               </div>
               <div className="p-6 flex flex-col gap-4">
-                <h3 className="text-2xl font-semibold">{project.title}</h3>
+                <h3 className="text-2xl font-semibold text-black">{project.title}</h3>
                 <p className="text-gray-700">{project.description}</p>
                 <motion.a
                  href={project.link}
