@@ -1,5 +1,7 @@
+"use client"
 import React from "react";
 import Image from "next/image";
+import {motion} from "framer-motion"
 
 const AboutSection: React.FC = () => {
   return (
@@ -7,16 +9,30 @@ const AboutSection: React.FC = () => {
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-10">
         
         {/* About Text */}
-        <div className="md:w-1/2">
-          <h2 className="text-4xl font-bold mb-6">About Me</h2>
-          <p className="text-gray-700 text-lg mb-4">
-            Hi, I'm <span className="font-semibold text-gray-900">Wilfred Osozi</span>, a passionate Full-Stack Developer and UI/UX Designer based in Kenya. I specialize in creating intuitive and responsive web applications that solve real-world problems and deliver exceptional user experiences.
+        <motion.div
+        initial={{ opacity: 0, x: -40 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8 }}
+          className="space-y-6">
+
+          <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900">About Me</h2>
+          
+          <p className="text-gray-700 text-lg leading-relaxed">
+            Hi, I'm {""} 
+            <span className="font-semibold text-gray-900">Wilfred Osozi</span>, a passionate Full-Stack Developer and UI/UX Designer based in Kenya. I specialize in creating intuitive and responsive web applications that solve real-world problems and deliver exceptional user experiences.
           </p>
-          <p className="text-gray-700 text-lg mb-4">
-            With a strong foundation in <span className="font-semibold">modern web technologies</span> and <span className="font-semibold">creative design</span>, I combine functionality with aesthetic appeal to craft solutions that are both effective and visually engaging. I enjoy collaborating with clients and teams to bring ideas to life.
+          <p className="text-gray-700 text-lg leading-relaxed">
+            I combine <span className="font-semibold">modern web technologies</span>, 
+            with <span className="font-semibold">creative design</span> to craft digital 
+            experiences that are both visually engaging and highly functional. 
+            I enjoy collaborating with developers, designers, and clients to 
+            transform ideas into impactful products.
           </p>
-          <p className="text-gray-700 text-lg mb-6">
-            When I’m not coding, I love exploring new design trends, learning about emerging technologies, and contributing to open-source projects that make a difference.
+
+          <p className="text-gray-700 text-lg leading-relaxed">
+            Away from the keyboard, I explore new design trends, learn emerging
+            technologies, and contribute to open-source projects that create
+            meaningful impact.
           </p>
 
            {/* Profile Image */}
@@ -29,13 +45,15 @@ const AboutSection: React.FC = () => {
             className="rounded-full object-cover shadow-lg"
           />
         </div>
-          <a
+          <motion.a
             href="#projects"
-            className="inline-block bg-black text-white px-6 py-3 rounded-md hover:bg-gray-800 transition mt-5 mb-5"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.97 }}
+            className="inline-block bg-blue-600 text-white px-7 py-3 rounded-lg shadow-md hover:bg-blue-700 transition"
           >
             View My Projects
-          </a>
-        </div>
+          </motion.a>
+        </motion.div>
       </div>
     </section>
   );

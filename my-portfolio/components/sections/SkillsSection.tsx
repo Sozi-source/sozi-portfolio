@@ -1,3 +1,4 @@
+import FadeIn from "../animation/FadeIn";
 
 const skills = [
   {name: "JavaScript", icon:"/assets/icons/js.png", level: "Advanced"},
@@ -17,13 +18,14 @@ const SkillsSection: React.FC = () => {
       id="mySkills"
       className="min-h-screen bg-gray-50 px-6 md:px-20 py-20 flex flex-col items-center"
     >
-      <h2 className="text-4xl font-bold mb-12 text-center">Skills & Expertise</h2>
+      <FadeIn>
+        <h2 className="text-4xl font-bold mb-12 text-center">Skills & Expertise</h2>
       
       <ul className="flex flex-wrap gap-4 justify-center">
         {skills.map((skill, index) => (
           <li
             key={index}
-            className="bg-white shadow-md rounded-xl p-5 flex flex-col items-center hover:scale-105 transition"
+            className="bg-white shadow-md rounded-xl p-5 flex flex-col items-center hover:-translate-y-2 hover:shadow-xl transition-transform duration-300"
           >
             <div>
               <img 
@@ -31,7 +33,7 @@ const SkillsSection: React.FC = () => {
             alt={skill.name}
             width={100}
             height={100}
-            className="w-16 h-16 mb-3"
+            className="w-16 h-16 mb-3 hover:rotate-360 transition-transform duration-300"
             />
             <p className="font-semibold text-gray-900">{skill.name} </p>
             <p className="text-sm text-gray-400">{skill.level} </p>
@@ -39,6 +41,9 @@ const SkillsSection: React.FC = () => {
           </li>
         ))}
       </ul>
+
+      </FadeIn>
+      
     </section>
   );
 };
