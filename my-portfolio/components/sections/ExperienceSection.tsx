@@ -67,7 +67,7 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({ item }) => {
 
   return (
     <div className="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition cursor-pointer">
-      <h3 className="text-xl font-semibold text-blue-600 mb-2">{item.title}</h3>
+      <h3 className="text-xl font-semibold text-black mb-2">{item.title}</h3>
       <p className="text-gray-700 mb-1">{item.company}</p>
       <p className="text-gray-500 mb-4">{item.period}</p>
       <ul className="list-disc list-inside text-gray-600 space-y-1">
@@ -78,7 +78,7 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({ item }) => {
       {item.points.length > 1 && (
         <button
           onClick={toggleShow}
-          className="mt-4 self-start text-blue-700 font-semibold hover:text-blue-900 hover:underline focus:outline-none transition-colors"
+          className="mt-4 self-start text-blue-500 hover:text-blue-600 hover:underline focus:outline-none transition-colors"
         >
           {showAll ? 'See Less' : 'See More'}
         </button>
