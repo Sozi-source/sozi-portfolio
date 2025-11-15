@@ -1,16 +1,14 @@
-import React from "react";
 
 const skills = [
-  "JavaScript",
-  "TypeScript",
-  "React",
-  "Next.js",
-  "Node.js",
-  "CSS",
-  "Tailwind CSS",
-  "Git & GitHub",
-  "REST APIs",
-  "Figma",
+  {name: "JavaScript", icon:"/assets/icons/js.png", level: "Advanced"},
+  {name: "TypeScript", icon:"/assets/icons/typescript.png", level: "Intermediate" },
+ {name: "React", icon: "/assets/icons/react.png", level: "Advanced"},
+ {name: "Next.js", icon: "/assets/icons/next.png", level: "Advanced"},
+  {name: "Node.js", icon: "/assets/icons/node.png", level: "Advanced"},
+ {name: "Tailwind CSS", icon: "/assets/icons/tailwind.png", level: "Intermediate"},
+  {name: "Git & GitHub", icon: "/assets/icons/github.png", level: "Advanced"},
+  {name: "REST APIs", icon: "/assets/icons/api.png", level: "Intermediate"},
+  {name: "Figma", icon: "/assets/icons/figma.png", level: "Intermediate"},
 ];
 
 const SkillsSection: React.FC = () => {
@@ -25,9 +23,19 @@ const SkillsSection: React.FC = () => {
         {skills.map((skill, index) => (
           <li
             key={index}
-            className="bg-white border border-gray-300 rounded-full px-6 py-2 text-gray-800 font-medium shadow-sm hover:shadow-md transition"
+            className="bg-white shadow-md rounded-xl p-5 flex flex-col items-center hover:scale-105 transition"
           >
-            {skill}
+            <div>
+              <img 
+            src={skill.icon}
+            alt={skill.name}
+            width={100}
+            height={100}
+            className="w-16 h-16 mb-3"
+            />
+            <p className="font-semibold text-gray-900">{skill.name} </p>
+            <p className="text-sm text-gray-400">{skill.level} </p>
+            </div>
           </li>
         ))}
       </ul>
