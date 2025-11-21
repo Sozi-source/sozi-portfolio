@@ -8,7 +8,7 @@ const projects = [
     title: "Weather App",
     description: "A web application that provides current weather information for any city using API integration.",
     image: "/assets/images/weather.png",
-    link: "https://project-08-2025-p32c.vercel.app/",
+    link: "https://weather-one-lilac-34.vercel.app/",
   },
   {
     title: "E-commerce App",
