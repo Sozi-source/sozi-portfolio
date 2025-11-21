@@ -12,7 +12,7 @@ const projects = [
   },
   {
     title: "E-commerce App",
-    description: "A full-stack e-commerce application built with React and Node.js.",
+    description: "A full-stack e-commerce application built with NextJS.",
     image: "/assets/images/shopping.png",
     link: "https://e-duka-three.vercel.app/",
   },
