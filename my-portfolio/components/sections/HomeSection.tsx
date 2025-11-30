@@ -33,10 +33,11 @@ const HomeSection= () => {
         >
         <Typewriter
         words={[
-          "I'm a Full-Stack Developer.",
-          "I'm a UI/UX Designer.",
-          "I build modern web applications.",
-          "I create elegant user experiences."
+          "I'm a web developer, specialised in front-end development.",
+          "I'm a problem solver.",
+          "I build applications that solve real-world problems.",
+          "I love coding and learning new technologies.",
+          "I'm passionate about creating beautiful and functional user experiences."
         ]}
         loop={0}            // 0 = infinite loop
         cursor

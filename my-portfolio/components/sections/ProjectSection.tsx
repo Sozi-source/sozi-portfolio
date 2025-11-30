@@ -20,7 +20,7 @@ const projects = [
   title: "Hotel Booking",
   description: "A web app that allows users to search, book, and manage hotel reservations online.",
   image: "/assets/images/travel.png",
-  link: "https://airbnbclone-peach-delta.vercel.app/",
+  link: "https://airbnb-clone-three-dusky.vercel.app/",
 },
 {
   title: "Age Calculator",
@@ -34,6 +34,14 @@ const projects = [
   image: "/assets/images/country.png",
   link: "https://country-search-hazel-beta.vercel.app/",
 },
+
+{
+  title: "Guessing Challenge",
+  description: "The app lets users guess a randomly generated number between 0 and 100",
+  image: "/assets/images/gg-512.png",
+  link: "https://number-game-nu-eight.vercel.app/"
+},
+
 
 ];
 

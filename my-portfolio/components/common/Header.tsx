@@ -11,7 +11,8 @@ const Header: React.FC = () => {
       <nav className="flex justify-between items-center h-full px-5 md:px-10">
         {/* Logo / Brand */}
         <div className="text-xl font-bold">
-          <Link href="/">My Portfolio</Link>
+          <Link href="/"
+          className="text-black text-2xl font-bold">Wilfred Osozi</Link>
         </div>
 
         {/* Desktop Menu */}
